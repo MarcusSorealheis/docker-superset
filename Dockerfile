@@ -24,7 +24,7 @@ ENV ADMIN_EMAIL admin@nowhere.com
 ENV ADMIN_PWD superset
 
 # by default only includes PostgreSQL because I'm selfish
-ENV DB_PACKAGES libpq-dev
+ENV DB_PACKAGES libpq-dev hive-jdbc
 ENV DB_PIP_PACKAGES psycopg2-binary sqlalchemy-redshift
 
 RUN apt-get update \
